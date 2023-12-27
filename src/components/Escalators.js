@@ -1,10 +1,21 @@
 import React from 'react';
-import '../index.css'; // Importing your CSS file
+import { useNavigate } from 'react-router-dom';
+import '../index.css';
 
 function Escalators() {
+  let navigate = useNavigate();
+
+  const goToTallMall = () => {
+    navigate("/TallMall");
+  };
+
   return (
     <div className="Escalators">
-      {/* You can add more content here */}
+      {/* Other content */}
+
+      <button className="sparkleButton5" onClick={goToTallMall}>
+        <img src="/sparkles.gif" alt="Go to TallMall" />
+      </button>
     </div>
   );
 }
