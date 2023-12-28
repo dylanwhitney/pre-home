@@ -1,33 +1,20 @@
-import React, { useState, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../index.css';
 
 function ZenBlossom() {
-  const [showOverlay, setShowOverlay] = useState(true);
-  const [showButton, setShowButton] = useState(true);
-  const [videoStarted, setVideoStarted] = useState(false);
   const videoRef = useRef(null);
-  const overlayTimer = useRef(null);
   const navigate = useNavigate();
 
-  const handleButtonClick = () => {
-    if (!videoStarted) {
-      setShowOverlay(false);
-      setShowButton(false);
-      setVideoStarted(true);
-
-      if (videoRef.current) {
-        videoRef.current.src += "&autoplay=1";
-      }
-
-      overlayTimer.current = setTimeout(() => {
-        setShowOverlay(true);
-      }, 11); // 1000 = 1 second, as they are milliseconds
+  // Effect to autoplay the video and show the overlay immediately
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.src += "&autoplay=1";
     }
-  };
+  }, []);
 
   const handleBackButton1Click = () => {
-    navigate('/Lobby');
+    navigate('/Lobby'); // Navigate to Lobby when this button is clicked
   };
 
   const handleSparkleButton6Click = () => {
@@ -44,26 +31,17 @@ function ZenBlossom() {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen
         className="youtubeVideoBackground">
-       </iframe>
+      </iframe>
 
-{showOverlay && (
-  <div className="contentOverlay">
-    {showButton && (
-      <button className="playButton1" onClick={handleButtonClick}></button>
-    )}
-
-    {!showButton && (
-      <>
+      {/* Second Overlay with Buttons */}
+      <div className="contentOverlay">
         <button className="backButton1" onClick={handleBackButton1Click}></button>
         <button className="sparkleButton6" onClick={handleSparkleButton6Click}>
           <img src="/sparkles.gif" alt="Go to NightBeach" />
         </button>
-      </>
-    )}
-  </div>
-)}
-</div>
-);
+      </div>
+    </div>
+  );
 }
 
 export default ZenBlossom;

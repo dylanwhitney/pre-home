@@ -97,6 +97,20 @@ body {
   animation: pulsateGlow 2s ease-in-out infinite;
 }
 
+.backButton4 {
+  position: absolute;
+  bottom: 7px; /* 20px from the bottom */
+  left: 25px; /* 20px from the left */
+  background-image: url('/public/backbutton.gif'); /* Using backbutton.gif as the button background */
+  background-color: transparent;
+  background-size: cover;
+  width: 50px; /* Adjust the size as needed */
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
 .zenBlossomBackground {
   position: relative;
   width: 100%;
@@ -125,22 +139,10 @@ body {
   background: rgba(255, 255, 255, 0.01); /* Semi-transparent background */
 }
 
-.playButton1 {
-  background-image: url('/public/sparkles.gif'); /* Using sparkles.gif as the button background */
-  background-size: cover;
-  width: 100px; /* Adjust the size as needed */
-  height: 100px;
-  border: none;
-  cursor: pointer;
-  border-radius: 50%; /* Makes it circular */
-  outline: none; /* Removes the outline */
-  animation: pulsateGlow 2s ease-in-out infinite; /* Optional: reuse the glow animation */
-}
-
 .backButton1 {
   position: absolute;
-  bottom: 20px; /* 20px from the bottom */
-  left: 20px; /* 20px from the left */
+  bottom: 7px; /* 20px from the bottom */
+  left: 25px; /* 20px from the left */
   background-image: url('/public/backbutton.gif'); /* Using backbutton.gif as the button background */
   background-color: transparent;
   background-size: cover;
@@ -168,7 +170,6 @@ body {
   animation: pulsateGlow 2s ease-in-out infinite;
 }
 
-
 .Escalators {
   background-image: url(/public/escalators.jpg);
   background-size: cover;
@@ -192,11 +193,18 @@ body {
   animation: pulsateGlow 2s ease-in-out infinite;
 }
 
-.LuxuryMall {
-  background-image: url(/public/interior5.png);
+.backButton3 {
+  position: absolute;
+  bottom: 7px; /* 20px from the bottom */
+  left: 25px; /* 20px from the left */
+  background-image: url('/public/backbutton.gif'); /* Using backbutton.gif as the button background */
+  background-color: transparent;
   background-size: cover;
-  background-position: center;
-  min-height: 100vh; /* Full viewport height */
+  width: 50px; /* Adjust the size as needed */
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
 
 .TallMall {
@@ -204,4 +212,266 @@ body {
   background-size: cover;
   background-position: center;
   min-height: 100vh; /* Full viewport height */
+}
+
+.sparkleButton7 {
+  position: fixed;
+  left: 600px;
+  bottom: 249px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.sparkleButton7 img {
+  width: 28px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 50%;
+  animation: pulsateGlow 2s ease-in-out infinite;
+}
+
+.sparkleButton8 {
+  position: fixed;
+  left: 900px;
+  bottom: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.sparkleButton8 img {
+  width: 57px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 50%;
+  animation: pulsateGlow 2s ease-in-out infinite;
+}
+
+.backButton2 {
+  position: absolute;
+  bottom: 7px; /* 20px from the bottom */
+  left: 25px; /* 20px from the left */
+  background-image: url('/public/backbutton.gif'); /* Using backbutton.gif as the button background */
+  background-color: transparent;
+  background-size: cover;
+  width: 50px; /* Adjust the size as needed */
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.LibraryMall {
+  background-image: url(/public/interior5.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* Full viewport height */
+}
+
+.sparkleButton12 {
+  position: fixed;
+  left: 790px;
+  bottom: 84px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.sparkleButton12 img {
+  width: 25px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 50%;
+  animation: pulsateGlow 2s ease-in-out infinite;
+}
+
+.backButton6 {
+  position: absolute;
+  bottom: 7px; /* 20px from the bottom */
+  left: 25px; /* 20px from the left */
+  background-image: url('/public/backbutton.gif'); /* Using backbutton.gif as the button background */
+  background-color: transparent;
+  background-size: cover;
+  width: 50px; /* Adjust the size as needed */
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.MallLobby {
+  background-image: url(/public/entrancelobby.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* Full viewport height */
+}
+
+.backButton7 {
+  position: absolute;
+  bottom: 7px; /* 20px from the bottom */
+  left: 25px; /* 20px from the left */
+  background-image: url('/public/backbutton.gif'); /* Using backbutton.gif as the button background */
+  background-color: transparent;
+  background-size: cover;
+  width: 50px; /* Adjust the size as needed */
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.HQroom {
+  background-image: url(/public/newsroom.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* Full viewport height */
+}
+
+.sparkleButton9 {
+  position: fixed;
+  left: 298px;
+  bottom: 283px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.sparkleButton10 {
+  position: fixed;
+  left: 675px;
+  bottom: 418px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.sparkleButton11 {
+  position: fixed;
+  left: 706px;
+  bottom: 248px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.portalButton1 {
+  position: fixed;
+  left: 420px;
+  bottom: 14px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Adjust the positions as needed */
+.sparkleButton9 img { width: 28px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 50%;
+  animation: pulsateGlow 2s ease-in-out infinite; }
+.sparkleButton10 img { width: 31px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 50%;
+  animation: pulsateGlow 2s ease-in-out infinite; }
+.sparkleButton11 img { width: 33px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 50%;
+  animation: pulsateGlow 2s ease-in-out infinite; }
+.portalButton1 img { width: 120px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 50%; }
+
+.backButton5 {
+  position: absolute;
+  bottom: 7px; /* 20px from the bottom */
+  left: 25px; /* 20px from the left */
+  background-image: url('/public/backbutton.gif'); /* Using backbutton.gif as the button background */
+  background-color: transparent;
+  background-size: cover;
+  width: 50px; /* Adjust the size as needed */
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.Armory {
+  background-image: url(/public/armoryneon.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* Full viewport height */
+}
+ 
+.backButton8 {
+  position: absolute;
+  bottom: 7px; /* 20px from the bottom */
+  left: 25px; /* 20px from the left */
+  background-image: url('/public/backbutton.gif'); /* Using backbutton.gif as the button background */
+  background-color: transparent;
+  background-size: cover;
+  width: 50px; /* Adjust the size as needed */
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.Overwatch {
+  background-image: url(/public/newsroom2.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* Full viewport height */
+}
+ 
+.backButton9 {
+  position: absolute;
+  bottom: 7px; /* 20px from the bottom */
+  left: 25px; /* 20px from the left */
+  background-image: url('/public/backbutton.gif'); /* Using backbutton.gif as the button background */
+  background-color: transparent;
+  background-size: cover;
+  width: 50px; /* Adjust the size as needed */
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.Roof {
+  background-image: url(/public/diningbalcony.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* Full viewport height */
+}
+ 
+.backButton10 {
+  position: absolute;
+  bottom: 7px; /* 20px from the bottom */
+  left: 25px; /* 20px from the left */
+  background-image: url('/public/backbutton.gif'); /* Using backbutton.gif as the button background */
+  background-color: transparent;
+  background-size: cover;
+  width: 50px; /* Adjust the size as needed */
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.Lodge {
+  background-image: url(/public/mountainlodge.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* Full viewport height */
+}
+ 
+.backButton11 {
+  position: absolute;
+  bottom: 7px; /* 20px from the bottom */
+  left: 25px; /* 20px from the left */
+  background-image: url('/public/backbutton.gif'); /* Using backbutton.gif as the button background */
+  background-color: transparent;
+  background-size: cover;
+  width: 50px; /* Adjust the size as needed */
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }

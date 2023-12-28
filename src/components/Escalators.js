@@ -9,12 +9,19 @@ function Escalators() {
     navigate("/TallMall");
   };
 
+  const goToLobby = () => {
+    navigate("/Lobby"); // Navigate to Lobby
+  };
+
   return (
     <div className="Escalators">
       {/* Other content */}
-
       <button className="sparkleButton5" onClick={goToTallMall}>
         <img src="/sparkles.gif" alt="Go to TallMall" />
+      </button>
+
+      {/* Back Button */}
+      <button className="backButton3" onClick={goToLobby}>
       </button>
     </div>
   );

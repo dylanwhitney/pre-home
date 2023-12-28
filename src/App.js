@@ -5,8 +5,14 @@ import Lobby from './components/Lobby';
 import ZenBlossom from './components/ZenBlossom';
 import NightBeach from './components/NightBeach';
 import Escalators from './components/Escalators';
-import LuxuryMall from './components/LibraryMall';
 import TallMall from './components/TallMall';
+import LibraryMall from './components/LibraryMall';
+import MallLobby from './components/MallLobby';
+import HQroom from './components/HQroom';
+import Armory from './components/Armory';
+import Overwatch from './components/Overwatch';
+import Roof from './components/Roof';
+import Lodge from './components/Lodge';
 
 function App() {
   return (
@@ -17,8 +23,14 @@ function App() {
         <Route path="/ZenBlossom" element={<ZenBlossom />} />
         <Route path="/NightBeach" element={<NightBeach />} />
         <Route path="/Escalators" element={<Escalators />} />
-        <Route path="/LuxuryMall" element={<LuxuryMall />} />
+        <Route path="/LibraryMall" element={<LibraryMall />} />
         <Route path="/TallMall" element={<TallMall />} />
+        <Route path="/MallLobby" element={<MallLobby />} />
+        <Route path="/HQroom" element={<HQroom />} />
+        <Route path="/Armory" element={<Armory />} />
+        <Route path="/Overwatch" element={<Overwatch />} />
+        <Route path="/Roof" element={<Roof />} />
+        <Route path="/Lodge" element={<Lodge />} />
         {/* Add more routes as needed */}
       </Routes>
     </Router>
