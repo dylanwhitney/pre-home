@@ -10,7 +10,7 @@ function Roof() {
   };
   return (
     <div className="Roof">      
-      <button className="backButton10" onClick={goToHQroom}>
+      <button className="backButton1" onClick={goToHQroom}>
       </button>
     </div>
   )

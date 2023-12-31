@@ -21,7 +21,7 @@ function Escalators() {
       </button>
 
       {/* Back Button */}
-      <button className="backButton3" onClick={goToLobby}>
+      <button className="backButton1" onClick={goToLobby}>
       </button>
     </div>
   );

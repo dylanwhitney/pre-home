@@ -97,20 +97,6 @@ body {
   animation: pulsateGlow 2s ease-in-out infinite;
 }
 
-.backButton4 {
-  position: absolute;
-  bottom: 7px; /* 20px from the bottom */
-  left: 25px; /* 20px from the left */
-  background-image: url('/public/backbutton.gif'); /* Using backbutton.gif as the button background */
-  background-color: transparent;
-  background-size: cover;
-  width: 50px; /* Adjust the size as needed */
-  height: 50px;
-  border: none;
-  cursor: pointer;
-  outline: none;
-}
-
 .zenBlossomBackground {
   position: relative;
   width: 100%;
@@ -193,20 +179,6 @@ body {
   animation: pulsateGlow 2s ease-in-out infinite;
 }
 
-.backButton3 {
-  position: absolute;
-  bottom: 7px; /* 20px from the bottom */
-  left: 25px; /* 20px from the left */
-  background-image: url('/public/backbutton.gif'); /* Using backbutton.gif as the button background */
-  background-color: transparent;
-  background-size: cover;
-  width: 50px; /* Adjust the size as needed */
-  height: 50px;
-  border: none;
-  cursor: pointer;
-  outline: none;
-}
-
 .TallMall {
   background-image: url(/public/interior6.png);
   background-size: cover;
@@ -246,25 +218,25 @@ body {
   animation: pulsateGlow 2s ease-in-out infinite;
 }
 
-.backButton2 {
-  position: absolute;
-  bottom: 7px; /* 20px from the bottom */
-  left: 25px; /* 20px from the left */
-  background-image: url('/public/backbutton.gif'); /* Using backbutton.gif as the button background */
-  background-color: transparent;
-  background-size: cover;
-  width: 50px; /* Adjust the size as needed */
-  height: 50px;
-  border: none;
-  cursor: pointer;
-  outline: none;
-}
-
 .LibraryMall {
   background-image: url(/public/interior5.png);
   background-size: cover;
   background-position: center;
   min-height: 100vh; /* Full viewport height */
+}
+
+.book1 {
+  position: fixed;
+  left: 377px;
+  bottom: 0px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.book1 img {
+  width: 30%; /* Scale down the image to 50% of its original size */
+  height: auto; 
 }
 
 .sparkleButton12 {
@@ -283,20 +255,6 @@ body {
   animation: pulsateGlow 2s ease-in-out infinite;
 }
 
-.backButton6 {
-  position: absolute;
-  bottom: 7px; /* 20px from the bottom */
-  left: 25px; /* 20px from the left */
-  background-image: url('/public/backbutton.gif'); /* Using backbutton.gif as the button background */
-  background-color: transparent;
-  background-size: cover;
-  width: 50px; /* Adjust the size as needed */
-  height: 50px;
-  border: none;
-  cursor: pointer;
-  outline: none;
-}
-
 .MallLobby {
   background-image: url(/public/entrancelobby.png);
   background-size: cover;
@@ -304,18 +262,20 @@ body {
   min-height: 100vh; /* Full viewport height */
 }
 
-.backButton7 {
-  position: absolute;
-  bottom: 7px; /* 20px from the bottom */
-  left: 25px; /* 20px from the left */
-  background-image: url('/public/backbutton.gif'); /* Using backbutton.gif as the button background */
-  background-color: transparent;
-  background-size: cover;
-  width: 50px; /* Adjust the size as needed */
-  height: 50px;
+.sparkleButton15 {
+  position: fixed;
+  left: 662px;
+  top: 3px;
   border: none;
+  background: none;
   cursor: pointer;
-  outline: none;
+}
+
+.sparkleButton15 img {
+  width: 13px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 50%;
+  animation: pulsateGlow 2s ease-in-out infinite;
 }
 
 .HQroom {
@@ -378,7 +338,39 @@ body {
   height: auto;
   border-radius: 50%; }
 
-.backButton5 {
+.Armory {
+  background-image: url(/public/armoryneon.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 100vh; /* Full viewport height */
+}
+
+.Armory button:not(.backButton2) {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Ensure images take up only the space they need */
+.Armory button:not(.backButton2) img {
+  display: block; /* Remove extra space around images */
+  width: 100%;
+  height: auto;
+}
+
+.roundHoloImage {
+  background-image: url(/public/roundholo.png);
+  position: absolute; /* Position relative to Armory */
+  bottom: 1px; /* Adjust as needed */
+  left: 497px; /* Adjust as needed */
+  z-index: 1; /* Higher than the background, lower than the buttons */
+  width: 30%; /* Adjust as needed */
+  height: auto; /* Adjust as needed */
+}
+
+.backButton2 {
   position: absolute;
   bottom: 7px; /* 20px from the bottom */
   left: 25px; /* 20px from the left */
@@ -392,25 +384,111 @@ body {
   outline: none;
 }
 
-.Armory {
-  background-image: url(/public/armoryneon.png);
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh; /* Full viewport height */
-}
- 
-.backButton8 {
-  position: absolute;
-  bottom: 7px; /* 20px from the bottom */
-  left: 25px; /* 20px from the left */
-  background-image: url('/public/backbutton.gif'); /* Using backbutton.gif as the button background */
-  background-color: transparent;
-  background-size: cover;
-  width: 50px; /* Adjust the size as needed */
-  height: 50px;
+.greatswordButton {
+  position: fixed;
+  left: 750px;
+  bottom: 20px;
+  z-index: 3;
   border: none;
+  background: none;
   cursor: pointer;
-  outline: none;
+  width: 72px;
+  height: 263px;
+}
+
+.greatswordButton img {
+  width: 28%; /* Adjust size as needed */
+  height: auto;
+}
+
+.platelegsButton {
+  position: fixed;
+  left: 654px;
+  bottom: 120px;
+  z-index: 2;
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: 99px;
+  height: 102px;
+}
+
+.platelegsButton img {
+  width: 13%; /* Adjust size as needed */
+  height: auto;
+}
+
+.bootsButton {
+  position: fixed;
+  left: 639px;
+  bottom: 20px;
+  z-index: 2;
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: 102px;
+  height: 97px;
+}
+
+.bootsButton img {
+  width: 10%; /* Adjust size as needed */
+  height: auto;
+}
+
+.Chestplate {
+  position: fixed;
+  left: 631px;
+  top: 180px;
+  z-index: 2;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.Chestplate img {
+  width: 22%; /* Adjust size as needed */
+  height: auto;
+}
+
+.Lens {
+  position: fixed;
+  left: 678px;
+  top: 120px;
+  z-index: 2;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.Lens img {
+  width: 9%; /* Adjust size as needed */
+  height: auto;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: navy;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 10; /* Ensure it's above other content */
+}
+
+.popupText {
+  color: white;
+  font-family: 'Arial', sans-serif; /* Choose a cool yet readable font */
+  font-size: 16px;
+}
+
+.closePopup {
+  background-color: rgb(20, 6, 75);
+  color: white;
+  border: none;
+  padding: 5x 10px;
+  margin-top: 5x;
+  cursor: pointer;
 }
 
 .Overwatch {
@@ -419,40 +497,12 @@ body {
   background-position: center;
   min-height: 100vh; /* Full viewport height */
 }
- 
-.backButton9 {
-  position: absolute;
-  bottom: 7px; /* 20px from the bottom */
-  left: 25px; /* 20px from the left */
-  background-image: url('/public/backbutton.gif'); /* Using backbutton.gif as the button background */
-  background-color: transparent;
-  background-size: cover;
-  width: 50px; /* Adjust the size as needed */
-  height: 50px;
-  border: none;
-  cursor: pointer;
-  outline: none;
-}
 
 .Roof {
   background-image: url(/public/diningbalcony.png);
   background-size: cover;
   background-position: center;
   min-height: 100vh; /* Full viewport height */
-}
- 
-.backButton10 {
-  position: absolute;
-  bottom: 7px; /* 20px from the bottom */
-  left: 25px; /* 20px from the left */
-  background-image: url('/public/backbutton.gif'); /* Using backbutton.gif as the button background */
-  background-color: transparent;
-  background-size: cover;
-  width: 50px; /* Adjust the size as needed */
-  height: 50px;
-  border: none;
-  cursor: pointer;
-  outline: none;
 }
 
 .Lodge {
@@ -461,17 +511,56 @@ body {
   background-position: center;
   min-height: 100vh; /* Full viewport height */
 }
- 
-.backButton11 {
-  position: absolute;
-  bottom: 7px; /* 20px from the bottom */
-  left: 25px; /* 20px from the left */
-  background-image: url('/public/backbutton.gif'); /* Using backbutton.gif as the button background */
-  background-color: transparent;
-  background-size: cover;
-  width: 50px; /* Adjust the size as needed */
-  height: 50px;
+
+.sparkleButton13 {
+  position: fixed;
+  left: 815px;
+  bottom: 130px;
   border: none;
+  background: none;
   cursor: pointer;
-  outline: none;
+}
+
+.sparkleButton13 img {
+  width: 25px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 50%;
+  animation: pulsateGlow 2s ease-in-out infinite;
+}
+
+.sparkleButton14 {
+  position: fixed;
+  left: 815px;
+  bottom: 335px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.sparkleButton14 img {
+  width: 25px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 50%;
+  animation: pulsateGlow 2s ease-in-out infinite;
+}
+
+.book2 {
+  position: fixed;
+  left: 380px;
+  bottom: 96px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.book2 img {
+  width: 20%; /* Scale down the image to 50% of its original size */
+  height: auto; 
+}
+
+.SkyPool {
+  background-image: url(/public/poolbalcony.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* Full viewport height */
 }

@@ -5,12 +5,28 @@ import '../index.css';
 function Lodge() {
   let navigate = useNavigate();
 
+  const goToBedroom = () => {
+    navigate("/Bedroom");
+  };
+
+  const goToLodgeStudy = () => {
+    navigate("/LodgeStudy");
+  };
+
   const goToHQroom = () => {
     navigate("/HQroom");
   };
   return (
     <div className="Lodge"> 
-      <button className="backButton11" onClick={goToHQroom}>
+      <button className="sparkleButton13" onClick={goToBedroom}>
+        <img src="/sparkles.gif" alt="Go to Bedroom" />
+      </button>
+
+      <button className="sparkleButton14" onClick={goToLodgeStudy}>
+        <img src="/sparkles.gif" alt="Go to LodgeStudy" />
+      </button>
+
+      <button className="backButton1" onClick={goToHQroom}>
       </button>
     </div>
   )

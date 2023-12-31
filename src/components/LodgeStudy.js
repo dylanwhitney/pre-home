@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../index.css';
 
-function ZenBlossom() {
+function LodgeStudy() {
   const videoRef = useRef(null);
   const navigate = useNavigate();
 
@@ -14,18 +14,14 @@ function ZenBlossom() {
   }, []);
 
   const handleBackButton1Click = () => {
-    navigate('/Lobby'); // Navigate to Lobby when this button is clicked
-  };
-
-  const handleSparkleButton6Click = () => {
-    navigate('/NightBeach'); // Navigate to NightBeach when this button is clicked
+    navigate('/Lodge'); 
   };
 
   return (
-    <div className="zenBlossomBackground">
+    <div className="lodgeStudyBackground">
       <iframe 
         ref={videoRef}
-        src="https://www.youtube.com/embed/3mR5e9HW-t0?si=izccVTxZsiHOFIhu&t=90s&amp;controls=0&loop=1&playlist=3mR5e9HW-t0" 
+        src="https://www.youtube.com/embed/https://www.youtube.com/embed/nmNqz74EOPE?si=c3onoXJF3HA8q769&amp;&controls=0&loop=1&playlist=nmNqz74EOPE"
         title="YouTube video" 
         frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -33,15 +29,16 @@ function ZenBlossom() {
         className="youtubeVideoBackground">
       </iframe>
 
-      {/* Second Overlay with Buttons */}
+      {/* Second Overlay with Back Button */}
       <div className="contentOverlay">
         <button className="backButton1" onClick={handleBackButton1Click}></button>
-        <button className="sparkleButton6" onClick={handleSparkleButton6Click}>
-          <img src="/sparkles.gif" alt="Go to NightBeach" />
-        </button>
+
+        <a href="https://drive.google.com/drive/folders/13qVoirdGOBQ4kV7tbg59ATgZreD7lnhX?usp=drive_link" target="_blank" rel="noopener noreferrer" className="book2">
+        <img src="/book.webp" alt="Library" />
+      </a>
       </div>
     </div>
   );
 }
 
-export default ZenBlossom;
+export default LodgeStudy;

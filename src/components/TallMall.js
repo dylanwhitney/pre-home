@@ -29,7 +29,7 @@ function TallMall() {
         <img src="/sparkles.gif" alt="Go to HQroom" />
       </button>
 
-      <button className="backButton2" onClick={goToEscalators}>
+      <button className="backButton1" onClick={goToEscalators}>
       </button>
     </div>
   );

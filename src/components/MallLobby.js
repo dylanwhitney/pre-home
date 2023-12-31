@@ -5,6 +5,10 @@ import '../index.css';
 function MallLobby() {
   let navigate = useNavigate();
 
+  const goToSkyPool = () => {
+    navigate("/SkyPool");
+  };
+
   const goToLibraryMall = () => {
     navigate("/LibraryMall");
   };
@@ -12,8 +16,11 @@ function MallLobby() {
   return (
     <div className="MallLobby">
       {/* Add more content here */}
+      <button className="sparkleButton15" onClick={goToSkyPool}>
+        <img src="/sparkles.gif" alt="Go to SkyPool" />
+      </button>
 
-      <button className="backButton7" onClick={goToLibraryMall}>
+      <button className="backButton1" onClick={goToLibraryMall}>
       </button>
     </div>
   );

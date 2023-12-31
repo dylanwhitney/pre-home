@@ -29,7 +29,7 @@ function Lobby() {
       </button>
 
       {/* Back Button */}
-      <button className="backButton4" onClick={goToHomePage}>
+      <button className="backButton1" onClick={goToHomePage}>
       </button>
     </div>
   );

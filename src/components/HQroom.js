@@ -25,7 +25,7 @@ function HQroom() {
       <button className="portalButton1" onClick={goToLodge}>
         <img src="/portal.gif" alt="Go to Lodge" />
       </button>
-      <button className="backButton5" onClick={goToTallMall}>
+      <button className="backButton1" onClick={goToTallMall}>
       </button>
     </div>
   );

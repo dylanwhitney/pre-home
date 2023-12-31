@@ -21,7 +21,7 @@ function NightBeach() {
     <div className="nightBeachBackground">
       <iframe 
         ref={videoRef}
-        src="https://www.youtube.com/embed/L_sGOlCaH8U?si=l67n_cjK7KTqjOYa&t=25s&amp;controls=0"
+        src="https://www.youtube.com/embed/L_sGOlCaH8U?si=l67n_cjK7KTqjOYa&t=25s&amp;controls=0&loop=1&playlist=L_sGOlCaH8U"
         title="YouTube video" 
         frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
