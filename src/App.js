@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './components/HomePage';
 import Lobby from './components/Lobby';
 import ZenBlossom from './components/ZenBlossom';
+import Lodestone from './components/Lodestone';
 import NightBeach from './components/NightBeach';
 import Escalators from './components/Escalators';
 import TallMall from './components/TallMall';
@@ -24,6 +25,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/Lobby" element={<Lobby />} />
         <Route path="/ZenBlossom" element={<ZenBlossom />} />
+        <Route path="/Lodestone" element={<Lodestone />} />
         <Route path="/NightBeach" element={<NightBeach />} />
         <Route path="/Escalators" element={<Escalators />} />
         <Route path="/LibraryMall" element={<LibraryMall />} />

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../index.css';
+import RandomContentDisplay from './RandomContentDisplay';
 
 function ZenBlossom() {
   const videoRef = useRef(null);
@@ -21,8 +22,13 @@ function ZenBlossom() {
     navigate('/NightBeach'); // Navigate to NightBeach when this button is clicked
   };
 
+  const handleSparkleButton16Click = () => {
+    navigate('/Lodestone');
+  };
+
   return (
     <div className="zenBlossomBackground">
+      <RandomContentDisplay />
       <iframe 
         ref={videoRef}
         src="https://www.youtube.com/embed/3mR5e9HW-t0?si=izccVTxZsiHOFIhu&t=90s&amp;controls=0&loop=1&playlist=3mR5e9HW-t0" 
@@ -35,9 +41,15 @@ function ZenBlossom() {
 
       {/* Second Overlay with Buttons */}
       <div className="contentOverlay">
-        <button className="backButton1" onClick={handleBackButton1Click}></button>
+        <button className="backButton1" onClick={handleBackButton1Click}>
+        </button>
+
         <button className="sparkleButton6" onClick={handleSparkleButton6Click}>
           <img src="/sparkles.gif" alt="Go to NightBeach" />
+          </button>
+
+        <button className="sparkleButton16" onClick={handleSparkleButton16Click}>
+          <img src="/sparkles.gif" alt="Go to Lodestone" />
         </button>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../index.css';
+import RandomContentDisplay from './RandomContentDisplay';
 
 function LodgeStudy() {
   const videoRef = useRef(null);
@@ -19,15 +20,17 @@ function LodgeStudy() {
 
   return (
     <div className="lodgeStudyBackground">
-      <iframe 
+      <RandomContentDisplay />
+
+        <iframe 
         ref={videoRef}
-        src="https://www.youtube.com/embed/https://www.youtube.com/embed/nmNqz74EOPE?si=c3onoXJF3HA8q769&amp;&controls=0&loop=1&playlist=nmNqz74EOPE"
+        src="https://www.youtube.com/embed/https://www.youtube.com/embed/nmNqz74EOPE?autoplay=1&controls=0&loop=1&playlist=nmNqz74EOPE"
         title="YouTube video" 
         frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen
         className="youtubeVideoBackground">
-      </iframe>
+        </iframe>
 
       {/* Second Overlay with Back Button */}
       <div className="contentOverlay">

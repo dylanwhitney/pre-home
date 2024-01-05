@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../index.css';
+import RandomContentDisplay from './RandomContentDisplay';
 
 function Lobby() {
   let navigate = useNavigate();
@@ -19,7 +20,8 @@ function Lobby() {
 
   return (
     <div className="Lobby">
-      {/* Other content */}
+    <RandomContentDisplay />
+    
       <button className="sparkleButton2" onClick={goToEscalators}>
         <img src="/sparkles.gif" alt="Go to Escalators" />
       </button>

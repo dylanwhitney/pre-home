@@ -35,6 +35,66 @@ body {
   }
 }
 
+.characterImage {
+  position: fixed;
+  height: 70%; /* 70% of the window webpage space height */
+  top: 50%;
+  transform: translateY(-50%); /* Vertically center */
+  z-index: 15;
+  cursor: pointer;
+}
+
+.characterImage.tiny {
+  height: 100px; /* Tiny size */
+  top: 48px; /* Slightly lower than the top to prevent cut-off */
+  right: 0; /* Start at the top-right corner */
+  z-index: 16;
+  cursor: pointer;
+}
+
+/* Adjust the right position for the second tiny image */
+.characterImage.tiny:nth-of-type(1) {
+  right: 69px; /* Shift right by the width of the first tiny image */
+}
+
+.characterImage:not(.tiny):first-of-type {
+  /* Horizontally center if there's only one or left-aligned if there are two */
+  left: calc(50% - 20%);
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.characterImage:not(.tiny):nth-of-type(2) {
+  /* Right image when there are two */
+  left: calc(50% + 20%);
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: navy;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 17;
+}
+
+.popupText {
+  color: white;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+}
+
+.closePopup {
+  background-color: rgb(20, 6, 75);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
 .homePageBackground {
   background-image: url(/public/entrance1.png);
   background-size: cover;
@@ -118,7 +178,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 10; /* Ensures the overlay is above the video */
+  z-index: 1; /* Ensures the overlay is above the video */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,6 +214,43 @@ body {
   height: 50px;
   border-radius: 50%;
   animation: pulsateGlow 2s ease-in-out infinite;
+}
+
+.sparkleButton16 {
+  position: fixed;
+  left: 280px;
+  bottom: 260px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.sparkleButton16 img {
+  width: 25px;
+  height: auto;
+  border-radius: 50%;
+  animation: pulsateGlow 2s ease-in-out infinite;
+}
+
+.Lodestone {
+  background-image: url('/public/tikibeach.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* Full viewport height */
+}
+
+.LodestoneBtn {
+  position: fixed;
+  left: 450px;
+  bottom: 1px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.LodestoneBtn img {
+  width: 100%; /* Scale down the image to 50% of its original size */
+  height: auto; 
 }
 
 .Escalators {
@@ -403,7 +500,7 @@ body {
 
 .platelegsButton {
   position: fixed;
-  left: 654px;
+  left: 658px;
   bottom: 120px;
   z-index: 2;
   border: none;
@@ -465,7 +562,7 @@ body {
   height: auto;
 }
 
-.popup {
+.popup2 {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -476,13 +573,13 @@ body {
   z-index: 10; /* Ensure it's above other content */
 }
 
-.popupText {
+.popupText2 {
   color: white;
   font-family: 'Arial', sans-serif; /* Choose a cool yet readable font */
   font-size: 16px;
 }
 
-.closePopup {
+.closePopup2 {
   background-color: rgb(20, 6, 75);
   color: white;
   border: none;
@@ -554,7 +651,37 @@ body {
 }
 
 .book2 img {
-  width: 20%; /* Scale down the image to 50% of its original size */
+  width: 20%;
+  height: auto; 
+}
+
+.calendar {
+  position: fixed;
+  z-index: 2;
+  left: 1056px;
+  bottom: 310px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.calendar img {
+  width: 18%;
+  height: auto; 
+}
+
+.todos {
+  position: fixed;
+  z-index: 2;
+  left: 1059px;
+  bottom: 275px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.todos img {
+  width: 15%;
   height: auto; 
 }
 

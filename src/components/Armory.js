@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../index.css';
+import RandomContentDisplay from './RandomContentDisplay';
 
 function Armory() {
   let navigate = useNavigate();
@@ -14,6 +15,7 @@ function Armory() {
 
   return (
     <div className="Armory">
+      <RandomContentDisplay />
       {/* Round Holo Image */}
       <img src="/roundholo.png" alt="Round Holo" className="roundHoloImage" />
     
@@ -37,25 +39,25 @@ function Armory() {
 
       {/* Greatsword Popup */}
       {showGreatswordPopup && (
-        <div className="popup">
-          <p className="popupText">Undaunted</p>
-          <button className="closePopup" onClick={() => setShowGreatswordPopup(false)}>Close</button>
+        <div className="popup2">
+          <p className="popupText2">Undaunted</p>
+          <button className="closePopup2" onClick={() => setShowGreatswordPopup(false)}>Close</button>
         </div>
       )}
 
       {/* Platelegs Popup */}
       {showPlatelegsPopup && (
-        <div className="popup">
-          <p className="popupText">Built Body, Optimum Health, Physical Ability</p>
-          <button className="closePopup" onClick={() => setShowPlatelegsPopup(false)}>Close</button>
+        <div className="popup2">
+          <p className="popupText2">Built Body, Optimum Health, Physical Ability</p>
+          <button className="closePopup2" onClick={() => setShowPlatelegsPopup(false)}>Close</button>
         </div>
       )}
 
       {/* Boots Popup */}
       {showBootsPopup && (
-        <div className="popup">
-          <p className="popupText">Proactive from consciousness rather than ever acting from unconsciousness (internally and externally)</p>
-          <button className="closePopup" onClick={() => setShowBootsPopup(false)}>Close</button>
+        <div className="popup2">
+          <p className="popupText2">Proactive from consciousness rather than ever acting from unconsciousness (internally and externally)</p>
+          <button className="closePopup2" onClick={() => setShowBootsPopup(false)}>Close</button>
         </div>
       )}
 

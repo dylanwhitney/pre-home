@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../index.css';
+import RandomContentDisplay from './RandomContentDisplay';
 
 function HQroom() {
   const navigate = useNavigate();
@@ -13,6 +14,7 @@ function HQroom() {
 
   return (
     <div className="HQroom">
+      <RandomContentDisplay />
       <button className="sparkleButton9" onClick={goToRoof}>
         <img src="/sparkles.gif" alt="Go to Roof" />
       </button>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../index.css';
+import RandomContentDisplay from './RandomContentDisplay';
 
 function Lodge() {
   let navigate = useNavigate();
@@ -18,6 +19,7 @@ function Lodge() {
   };
   return (
     <div className="Lodge"> 
+    <RandomContentDisplay />
       <button className="sparkleButton13" onClick={goToBedroom}>
         <img src="/sparkles.gif" alt="Go to Bedroom" />
       </button>

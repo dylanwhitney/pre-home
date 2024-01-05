@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../index.css';
+import RandomContentDisplay from './RandomContentDisplay';
 
 function NightBeach() {
   const videoRef = useRef(null);
@@ -19,6 +20,7 @@ function NightBeach() {
 
   return (
     <div className="nightBeachBackground">
+      <RandomContentDisplay />
       <iframe 
         ref={videoRef}
         src="https://www.youtube.com/embed/L_sGOlCaH8U?si=l67n_cjK7KTqjOYa&t=25s&amp;controls=0&loop=1&playlist=L_sGOlCaH8U"

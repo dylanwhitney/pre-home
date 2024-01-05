@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../index.css';
+import RandomContentDisplay from './RandomContentDisplay';
 
 function SkyPool() {
   let navigate = useNavigate();
@@ -10,7 +11,8 @@ function SkyPool() {
   };
 
   return (
-    <div className="SkyPool"> 
+    <div className="SkyPool">
+      <RandomContentDisplay /> 
       <button className="backButton1" onClick={goToMallLobby}>
       </button>
     </div>

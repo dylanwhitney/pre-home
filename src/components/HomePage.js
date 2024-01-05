@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../index.css';
+import RandomContentDisplay from './RandomContentDisplay';
 
 function HomePage() {
   let navigate = useNavigate();
@@ -11,7 +12,7 @@ function HomePage() {
 
   return (
     <div className="homePageBackground">
-      {/* Other content */}
+      <RandomContentDisplay />
       
       {/* Sparkling GIF as a clickable div */}
       <div className="sparkleButton1" onClick={goToLobby}>

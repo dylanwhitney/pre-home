@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../index.css';
+import RandomContentDisplay from './RandomContentDisplay';
 
 function LibraryMall() {
   let navigate = useNavigate();
@@ -15,7 +16,8 @@ function LibraryMall() {
 
   return (
     <div className="LibraryMall">
-      {/* Other content */}
+      <RandomContentDisplay />
+ 
       <button className="sparkleButton12" onClick={goToMallLobby}>
         <img src="/sparkles.gif" alt="Go to MallLobby" />
       </button>
